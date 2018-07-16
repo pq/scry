@@ -1,7 +1,5 @@
 # scry
 
-a lightweight lua language server for norns.
-
 ### advises
 
 scry flags syntax errors, identifies common control and data flow issues,  highlights implicitly defined globals, overwritten or mutated protected norns global state, unused or shadowed variables and more.  behind the scenes scry uses [lua_check](https://github.com/mpeterv/luacheck) for linting and analysis and provides all of it’s supported [warnings](https://luacheck.readthedocs.io/en/stable/index.html).
