@@ -48,13 +48,14 @@ more ambitiously, another mode ("see") for
 running scry involves setting up two parts. 
 
 **scry server.** a process that manages a web socket that serves requests to “advise” and “mend” to maiden.
+
 **scry maiden.** a version of maiden, tailored to listen to advice from a scry server.
 
 trying out scry involves running a local scry server and local maiden dev server instance.  maiden will point to matron and sc repls on your norns device so you can edit and run your scripts in dust.
 
 ### scry server
 
-**get the source.** clone this repo (>>><<<).
+**get the source.** clone or download the [scry repo](https://github.com/pq/scry).
 
 **setup.** first you’ll need to get some lua libraries installed to do the heavy-lifting:`luacheck` (for static analysis) and `lcf` (for formatting).
 
