@@ -6,9 +6,16 @@ a lightweight lua language server for [norns](https://github.com/monome/norns).
 
 scry flags syntax errors, identifies common control and data flow issues,  highlights implicitly defined globals, overwritten or mutated protected norns global state, unused or shadowed variables and more.  behind the scenes scry uses [lua_check](https://github.com/mpeterv/luacheck) for linting and analysis and provides all of it’s supported [warnings](https://luacheck.readthedocs.io/en/stable/index.html).
 
+
+![alt text](https://github.com/pq/scry/blob/master/docs/images/demo_advise.gif "scry advises")
+
+
 ### mends
 
 scry builds on the [lua_code_formatter](https://github.com/martin-eden/lua_code_formatter) to provide simple on-demand code formatting for selections or entire documents.
+
+![alt text](https://github.com/pq/scry/blob/master/docs/images/demo_mend.gif "scry mends")
+
 
 ### sees
 
@@ -95,11 +102,7 @@ finally, start scry:
 
 scry runs as a small lightweight server process.  maiden connects to scry via a web socket.  
 
-* on source changes, editor contents are sent to scry for analysis; advice comes back as a list of “issues” that are translated into editor gutter annotations and inline source markers.
-	
-<TODO: PICTURE>
-
- > syntax errors appear in red and warnings in yellow. blue markers flag norns callback implementations for easy identification.
+* on source changes, editor contents are sent to scry for analysis; advice comes back as a list of “issues” that are translated into editor gutter annotations and inline source markers. syntax errors appear in red and warnings in yellow. blue markers flag norns callback implementations for easy identification.
 
 * on demand, editor selections (or full contents) are sent to scry for mending with a keystroke (⌘-SHIFT-F); a tidy, well formatted result replaces unruly editor contents.
 	 
@@ -107,5 +110,5 @@ the smarts of scry are written in lua and leverage proven modules.  scry is  tin
 
 ## next steps
 
-- [ ] migrate to a more native server wrapper (using `ws-wrapper` or lua web sockets).
+- [ ] migrate to a more native server wrapper (using `ws-wrapper`, go or lua web sockets).
 - [ ] evaluate norns lua dependency installation options.
