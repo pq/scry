@@ -23,6 +23,17 @@ scry builds on the [lua_code_formatter](https://github.com/martin-eden/lua_code_
 
 ---
 
+
+## implementation
+
+scry runs as a small lightweight server process.  maiden connects to scry via a web socket.  
+
+* on source changes, editor contents are sent to scry for analysis; advice comes back as a list of “issues” that are translated into editor gutter annotations and inline source markers. syntax errors appear in red and warnings in yellow. blue markers flag norns callback implementations for easy identification.
+
+* on demand, editor selections (or full contents) are sent to scry for mending with a keystroke (⌘-SHIFT-F); a tidy, well formatted result replaces unruly editor contents.
+	 
+the smarts of scry are written in lua and leverage proven modules.  scry is  tiny, scalable and simple to extend.
+
 	
 ## motivation and background
 
@@ -98,15 +109,6 @@ finally, start scry:
 6. point your web browser at the dev server: `http://localhost:3000/`
 
 
-## implementation
-
-scry runs as a small lightweight server process.  maiden connects to scry via a web socket.  
-
-* on source changes, editor contents are sent to scry for analysis; advice comes back as a list of “issues” that are translated into editor gutter annotations and inline source markers. syntax errors appear in red and warnings in yellow. blue markers flag norns callback implementations for easy identification.
-
-* on demand, editor selections (or full contents) are sent to scry for mending with a keystroke (⌘-SHIFT-F); a tidy, well formatted result replaces unruly editor contents.
-	 
-the smarts of scry are written in lua and leverage proven modules.  scry is  tiny, scalable and simple to extend.
 
 ## next steps
 
