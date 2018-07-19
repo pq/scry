@@ -85,13 +85,13 @@ finally, start scry:
 
 ### scry maiden
 
-**get the source.** check out the >>> <<< branch for a  a version of maiden that integrates w scry. follow the general maiden setup instructions to install deps, etc. >>><<<.
+**get the source.** check out the `scry` branch of my [maiden fork](https://github.com/pq/maiden) for a version of maiden that integrates with scry. follow the steps in the general maiden [README] (https://github.com/monome/maiden/blob/master/README.md) to install deps, etc.
 
 **run.**
 
 0. be sure wifi is enabled on `norns` (system > wifi menu)
 1. note the ip address (visible in the wifi menu once connected); alternatively if `norns.local` resolves for you (`ping norns.local`), prefer that.
-2. update `app/public/repl-endpoints.json`  replacing `maiden_app_location`to point at your norns ip address (here on we’ll use `norns.local`)
+2. update `app/public/repl-endpoints.json`  replacing `maiden_app_location`to point at your norns ip address. (here on we’ll use `norns.local`)
 3. mount your `norns` locally (on mac os, `sshfs we@norns.local: ~/norns-mnt`)
 4. (in a terminal window) start the backend: `go build && ./maiden -app app/build/ -data ~/norns-mnt/dust -doc ~/norns-mnt/norns/doc -debug`
 5. (in another terminal) start the dev server:  `cd app; yarn start`
