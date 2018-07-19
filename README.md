@@ -85,7 +85,7 @@ finally, start scry:
 
 ### scry maiden
 
-**get the source.** check out the `scry` branch of my [maiden fork](https://github.com/pq/maiden) for a version of maiden that integrates with scry. follow the steps in the general maiden [README] (https://github.com/monome/maiden/blob/master/README.md) to install deps, etc.
+**get the source.** check out the `scry` branch of my [maiden fork](https://github.com/pq/maiden) for a version of maiden that integrates with scry. follow the steps in the general maiden [README](https://github.com/monome/maiden/blob/master/README.md) to install deps, etc.
 
 **run.**
 
