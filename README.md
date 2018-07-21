@@ -112,6 +112,6 @@ finally, start scry:
 
 ## next steps
 
-- [ ] tune analysis for norns #1
-- [ ] migrate to a more native server wrapper (using `ws-wrapper`, go or lua web sockets) #4
-- [ ] evaluate norns lua dependency installation options #5
+- [ ] tune analysis for norns ([#1](https://github.com/pq/scry/issues/1))
+- [ ] migrate to a more native server wrapper (using `ws-wrapper`, go or lua web sockets) ([#4](https://github.com/pq/scry/issues/4))
+- [ ] evaluate norns lua dependency installation options ([#5](https://github.com/pq/scry/issues/5))
